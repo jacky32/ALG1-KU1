@@ -8,6 +8,9 @@ public class Main {
     NuclearReactor secondNuclearReactor = createNuclearReactor(24000, false);
     NuclearPowerPlant dukovany = createNuclearPowerPlant("Dukovany","Popis Dukovan...", firstCoolingTower, firstGenerator, firstNuclearReactor);
     NuclearPowerPlant temelin = createNuclearPowerPlant("Temelín","Popis Temelínu...", secondCoolingTower, secondGenerator, secondNuclearReactor);
+
+    dukovany.printInfo();
+    temelin.printInfo();
   }
 
   private static CoolingTower createCoolingTower(double height, double diameter) {
